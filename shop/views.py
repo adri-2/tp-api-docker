@@ -40,13 +40,13 @@ class AdminCategoryViewset(MultipleSerializerMixin, ModelViewSet):
 
     def get_queryset(self):
         return Category.objects.all()
-
+    
 class AdminArticleViewset(MultipleSerializerMixin, ModelViewSet):
 
     serializer_class = ArticleListSerializer
 
     queryset = Article.objects.all()
-
+    
 
 
 
